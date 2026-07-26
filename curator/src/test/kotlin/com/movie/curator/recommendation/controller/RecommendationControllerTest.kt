@@ -1,8 +1,8 @@
 package com.movie.curator.recommendation.controller
 
-import com.movie.curator.recommendation.client.GeminiClient
-import com.movie.curator.recommendation.dto.RecoRequest
-import com.movie.curator.recommendation.dto.RecoResponse
+import com.movie.curator.domain.recommendation.client.GeminiClient
+import com.movie.curator.domain.recommendation.dto.RecoRequest
+import com.movie.curator.domain.recommendation.dto.RecoResponse
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.mock.mockito.MockBean
