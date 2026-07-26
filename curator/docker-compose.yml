@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: curator-postgres
+    environment:
+        POSTGRES_DB: curator
+        POSTGRES_USER: curator
+        POSTGRES_PASSWORD: curator
+    ports:
+        - "5432:5432"
+    volumes:
+        - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U curator -d curator"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+    postgres_data:

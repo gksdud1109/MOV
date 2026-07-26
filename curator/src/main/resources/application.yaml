@@ -1,3 +1,15 @@
 spring:
   application:
     name: curator
+
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/curator}
+    username: ${DB_USERNAME:curator}
+    password: ${DB_PASSWORD:curator}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true

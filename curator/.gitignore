@@ -41,3 +41,5 @@ out/
 
 ### custom ###
 005_movie_curation_mvp.md
+/.omc/**/
+.DS_Store
