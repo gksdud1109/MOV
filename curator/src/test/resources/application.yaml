@@ -6,3 +6,27 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create-drop
+  ai:
+    model:
+      chat: google-genai
+      embedding: none
+      image: none
+      moderation: none
+      audio:
+        speech: none
+        transcription: none
+    google:
+      genai:
+        api-key: test-key
+
+app:
+  jwt:
+    secret: test-only-secret-must-be-at-least-32-bytes
+  oauth:
+    kakao:
+      user-info-uri: https://example.test/kakao
+    naver:
+      user-info-uri: https://example.test/naver
+    google:
+      issuer: https://accounts.google.com
+      jwks-uri: https://example.test/google/jwks

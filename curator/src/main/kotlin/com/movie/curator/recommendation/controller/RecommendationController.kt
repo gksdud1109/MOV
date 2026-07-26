@@ -1,10 +1,10 @@
 package com.movie.curator.recommendation.controller
 
-import com.movie.curator.common.openapi.ApiErrorCode
-import com.movie.curator.common.response.ApiResponse
 import com.movie.curator.recommendation.dto.RecoRequest
 import com.movie.curator.recommendation.dto.RecoResponse
 import com.movie.curator.recommendation.service.RecommendationService
+import com.movie.curator.global.openapi.ApiErrorCode
+import com.movie.curator.global.response.ApiResponse
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.tags.Tag
 import jakarta.validation.Valid
